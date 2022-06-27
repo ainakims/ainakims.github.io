@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="themes/cafe.min.css"/>
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .fondo {
+             background-image: url("./img/FondoJumboTron.jpg");
+             background-position: center;
+             background-size: cover;
+        }
+        .marco {
+            color:yellow;
+        }
+        .btn-color {
+            background-color: #A67B44;
+            color: antiquewhite;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 23%;
+            margin-bottom: 40px;
+        }
+
+        .card-body {
+            padding: 6px 2px;
+            text-align: center;
+        }
+
+        .col-2 {
+            width: 49%;
+        }
+
+        .col-2 img {
+            margin-bottom: 15px;
+        }
+        
+        .col-3 {
+            width: 33%;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 300px) {
+            .marco h1 {
+                font-size: 26px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .marco h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .card {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .col-3 {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .col-2 {
+                width: 100%;
+            }
+        }
+   </style>
+</head>
+<body>
+    <!--Inicio-->
+    <div data-role="page" id="inicio" data-theme="a">
+        <div class="container" style="background-color:#F0DAAA;">
+            <!--Barra de navegación-->
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar" class="menu">
+                    <ul>
+                        <li><a href="#inicio" data-icon="home" style="color:#F1D196;"><span>Inicio</span></a></li>
+                        <li><a href="#catalogo" data-icon="shop" style="color:#F1D196;"><span>Catálogo</span></a></li>
+                        <li><a href="#blog" data-icon="comment" style="color:#F1D196;"><span>Blog</span></a></li>
+                        <li><a href="#nosotros" data-icon="info" style="color:#F1D196;"><span>Nosotros</span></a></li>
+                        <li><a href="#contacto" data-icon="phone" style="color:#F1D196;"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <!--Contenido-->
+            <div data-role="content" data-position="inline">
+                <div class="p-5 rounded fondo">
+                    <div class="marco">
+                         <h1 class="display-1 text-center">Figurámica</h1>
+                         <h2 class="display-4 text-center">La Cerámica a su alcance.</h2>
+                    </div>
+               </div>
+            </div>
+            <!--Pie de página-->
+            <div data-role="footer" data-position="fixed">
+                a
+            </div>
+        </div>
+    </div>
+    <!--Catálogo-->
+    <div data-role="page" id="catalogo" data-theme="a">
+        <div class="container" style="background-color:#F0DAAA;">
+            <!--Barra de navegación-->
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#inicio" data-icon="home" style="color:#F1D196;"><span>Inicio</span></a></li>
+                        <li><a href="#catalogo" data-icon="shop" style="color:#F1D196;"><span>Catálogo</span></a></li>
+                        <li><a href="#blog" data-icon="comment" style="color:#F1D196;"><span>Blog</span></a></li>
+                        <li><a href="#nosotros" data-icon="info" style="color:#F1D196;"><span>Nosotros</span></a></li>
+                        <li><a href="#contacto" data-icon="phone" style="color:#F1D196;"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Contenido-->
+            <div data-role="content" data-position="inline">
+                <h1 class="display-6 text-center">Catálogo</h1>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/Hornitos.JPG" class="card-img-top img-thumbnail" alt="Hornitos de Adorno">
+                            <h5 class="card-title">Hornitos de Cerámica</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis quisquam sed odio voluptates culpa? Facere magnam maiores perferendis deleniti quos, rerum veritatis. Esse, nesciunt odit perferendis eveniet veritatis impedit..</p>
+                            <a href="#" class="btn btn-color">Ver más...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/JuegoDeCafe.jpg" class="card-img-top img-thumbnail" alt="Cafetera y Taza">
+                            <h5 class="card-title">Cafetera con Tazas</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis quisquam sed odio voluptates culpa? Facere magnam maiores perferendis deleniti quos, rerum veritatis. Esse, nesciunt odit perferendis eveniet veritatis impedit..</p>
+                            <a href="#" class="btn btn-color">Ver más...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/TazasInfantiles.jpg" alt="Plato" class="card-img-top img-thumbnail">
+                            <h5 class="card-title">Cafetera con Tazas</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis quisquam sed odio voluptates culpa? Facere magnam maiores perferendis deleniti quos, rerum veritatis. Esse, nesciunt odit perferendis eveniet veritatis impedit..</p>
+                            <a href="#" class="btn btn-color">Ver más...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/Tazon.jpg" alt="Tazon" class="card-img-top img-thumbnail">
+                            <h5 class="card-title">Tazón</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis quisquam sed odio voluptates culpa? Facere magnam maiores perferendis deleniti quos, rerum veritatis. Esse, nesciunt odit perferendis eveniet veritatis impedit..</p>
+                            <a href="#" class="btn btn-color">Ver más...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Pie de página-->
+            <div data-role="footer" data-position="fixed">
+                a
+            </div>
+        </div>
+    </div>
+    <!--Blog-->
+    <div data-role="page" id="blog" data-theme="a">
+        <div class="container" style="background-color:#F0DAAA;">
+            <!--Barra de navegación-->
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#inicio" data-icon="home" style="color:#F1D196;"><span>Inicio</span></a></li>
+                        <li><a href="#catalogo" data-icon="shop" style="color:#F1D196;"><span>Catálogo</span></a></li>
+                        <li><a href="#blog" data-icon="comment" style="color:#F1D196;"><span>Blog</span></a></li>
+                        <li><a href="#nosotros" data-icon="info" style="color:#F1D196;"><span>Nosotros</span></a></li>
+                        <li><a href="#contacto" data-icon="phone" style="color:#F1D196;"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Contenido-->
+            <div data-role="content" data-position="inline">
+                <h1 class="display-6 text-center">Blog</h1>
+                <section class="row">
+                    <article class="col-3">
+                        <h4 class="text-bold">Blog Post 1</h4>
+                        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sit accusamus provident suscipit numquam dolores voluptas labore, perferendis dolore sequi, incidunt earum! Possimus accusantium aliquam facilis. Ducimus soluta dolorem animi!</span><span>Voluptatum voluptatibus doloremque nulla minima a at et, repellendus cum enim ratione tenetur rem repudiandae, error quae laudantium, sequi cupiditate maxime pariatur dolores culpa ut? Saepe aperiam vitae est repellendus.</span></p>
+                        <p><a href="#" class="btn btn-outline-dark">Continuar Leyendo...</a></p>
+                    </article>
+                    <article class="col-3">
+                        <h4 class="text-bold">Blog Post 2</h4>
+                        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sit accusamus provident suscipit numquam dolores voluptas labore, perferendis dolore sequi, incidunt earum! Possimus accusantium aliquam facilis. Ducimus soluta dolorem animi!</span><span>Voluptatum voluptatibus doloremque nulla minima a at et, repellendus cum enim ratione tenetur rem repudiandae, error quae laudantium, sequi cupiditate maxime pariatur dolores culpa ut? Saepe aperiam vitae est repellendus.</span></p>
+                        <p><a href="#" class="btn btn-outline-dark">Continuar Leyendo...</a></p>
+                    </article>
+                    <article class="col-3">
+                        <h5 class="text-bold">Blog Post 3</h5>
+                        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sit accusamus provident suscipit numquam dolores voluptas labore, perferendis dolore sequi, incidunt earum! Possimus accusantium aliquam facilis. Ducimus soluta dolorem animi!</span><span>Voluptatum voluptatibus doloremque nulla minima a at et, repellendus cum enim ratione tenetur rem repudiandae, error quae laudantium, sequi cupiditate maxime pariatur dolores culpa ut? Saepe aperiam vitae est repellendus.</span></p>
+                        <p><a href="#" class="btn btn-outline-dark">Continuar Leyendo...</a></p>
+                    </article>
+                </section>
+            </div>
+            <!--Pie de página-->
+            <div data-role="footer" data-position="fixed">
+                a
+            </div>
+        </div>
+    </div>
+    <!--Nosotros-->
+    <div data-role="page" id="nosotros" data-theme="a">
+        <div class="container" style="background-color:#F0DAAA;">
+            <!--Barra de navegación-->
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#inicio" data-icon="home" style="color:#F1D196;"><span>Inicio</span></a></li>
+                        <li><a href="#catalogo" data-icon="shop" style="color:#F1D196;"><span>Catálogo</span></a></li>
+                        <li><a href="#blog" data-icon="comment" style="color:#F1D196;"><span>Blog</span></a></li>
+                        <li><a href="#nosotros" data-icon="info" style="color:#F1D196;"><span>Nosotros</span></a></li>
+                        <li><a href="#contacto" data-icon="phone" style="color:#F1D196;"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Contenido-->
+            <div data-role="content" data-position="inline">
+                <h1 class="display-6 text-center">Nosotros</h1>
+                <section>
+                    <div class="alert alert-warning">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="./img/nosotros.jpg" alt="El Equipo" class="img-thumbnail">
+                            </div>
+                            <div class="col-2">
+                                <h4 class="text-center">La Empresa</h4>
+                                <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur adipisci commodi vel harum deserunt, excepturi doloribus rem quidem soluta magni omnis magnam impedit facilis, molestias laboriosam eos, qui sint.
+                                Eum nihil laudantium dignissimos iure magnam soluta aspernatur atque necessitatibus facere aperiam nulla omnis odit, illum asperiores architecto itaque totam at quia distinctio? Rerum expedita reiciendis fuga consequuntur facilis doloribus.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem provident adipisci. Eum voluptas maiores a suscipit harum iure eligendi, temporibus accusantium necessitatibus ducimus sed repudiandae adipisci optio tempore dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Pie de página-->
+            <div data-role="footer" data-position="fixed">
+                a
+            </div>
+        </div>
+    </div>
+    <!--Contacto-->
+    <div data-role="page" id="contacto" data-theme="a">
+        <div class="container" style="background-color:#F0DAAA;">
+            <!--Barra de navegación-->
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#inicio" data-icon="home" style="color:#F1D196;"><span>Inicio</span></a></li>
+                        <li><a href="#catalogo" data-icon="shop" style="color:#F1D196;"><span>Catálogo</span></a></li>
+                        <li><a href="#blog" data-icon="comment" style="color:#F1D196;"><span>Blog</span></a></li>
+                        <li><a href="#nosotros" data-icon="info" style="color:#F1D196;"><span>Nosotros</span></a></li>
+                        <li><a href="#contacto" data-icon="phone" style="color:#F1D196;"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Contenido-->
+            <div data-role="content" data-position="inline">
+                <h1 class="display-6 text-center">Contacto</h1>
+                <section>
+                    <div class="row">
+                        <div class="col-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60307.56061734799!2d-96.17055006875002!3d19.1417337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c340e4911dfa13%3A0xe16328133b350134!2sInterceramic%20Oficial!5e0!3m2!1ses-419!2smx!4v1655482808729!5m2!1ses-419!2smx" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="col-2">
+                            <h4 class="text-center">Nos interesa su opinión</h4>
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3">
+                                    <label for="email" class="form-label">Correo:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Su correo..." name="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pwd" class="form-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Su Contraseña..." name="pswd">
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="comment">Comentarios:</label>
+                                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                </div> 
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form> 
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Pie de página-->
+            <div data-role="footer" data-position="fixed">
+                a
+            </div>
+        </div>
+    </div>
+</body>
+</html>
